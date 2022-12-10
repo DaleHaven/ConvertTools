@@ -17,11 +17,14 @@
 #### 不推荐的使用
 1. JSON的Key或者Value中存在英文的逗号，这会导致CSV列分隔符产生歧义，请使用严谨模式。
 #### 使用案例
-第一步：
+- 第一步：
 ```shell
 $PYTHON_HOME/bin/python3 ./ConvertTools.py
 ```
-第二步：
+- 第二步： 
+  - 注意事项:
+  1. 结果输出路径需要绝对路径
+  2. 结果输出的文件如果已存在，则会追加写入，不会进行覆盖.
 ```shell
 请输入被转换文件(绝对路径)：C:\DaleHaven\pycharm_workspace\FileConvertTools\SourceData\TestData.json
 请选择模式(0.严谨模式/1.不严谨模式): 0
