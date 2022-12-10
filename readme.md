@@ -16,3 +16,15 @@
 2. 多层嵌套的json。
 #### 不推荐的使用
 1. JSON的Key或者Value中存在英文的逗号，这会导致CSV列分隔符产生歧义，请使用严谨模式。
+#### 使用案例
+第一步：
+```shell
+$PYTHON_HOME/bin/python3 ./ConvertTools.py
+```
+第二步：
+```shell
+请输入被转换文件(绝对路径)：C:\DaleHaven\pycharm_workspace\FileConvertTools\SourceData\TestData.json
+请选择模式(0.严谨模式/1.不严谨模式): 0
+请选择模式(2.高性能模式/3.正常性能模式): 3
+请输入转换后目录及文件名(绝对路径)：C:\DaleHaven\pycharm_workspace\FileConvertTools\JobResult\ConvertResult.csv
+```
